@@ -37,3 +37,20 @@ Nosso objetivo principal, para o caso da espectroscopia, é criar um programa qu
 - (Adicionais) Plotar automaticamente as áreas de interesse na imagem (eletroforese).
 - (Adicionais) Criar uma ideia de tela para o programa. ✅
 - (Adicionais) Pesquisar ou criar um código que cria um PDF em Python.
+
+
+##Resumo do projeto 
+
+O código apresentado é um programa em Python que utiliza a biblioteca Tkinter para criar uma interface gráfica com o usuário. O programa possui três classes: EletroScreen, SpectroScreen e StartScreen.
+
+A classe EletroScreen é responsável por criar uma tela de eletroforese. A função generate_graph_eletro plota um gráfico com base nos valores de coordenadas e kDa fornecidos. O usuário pode selecionar uma imagem, escolher pontos de interesse na imagem e o programa irá exibir o gráfico correspondente.
+
+A classe SpectroScreen cria uma tela para um espectrofotômetro. A função generate_graph plota um gráfico de absorbância em função da concentração com base nos valores fornecidos pelo usuário. O usuário pode digitar valores de absorbância e concentração em células correspondentes e o programa calculará a média das absorbâncias e plotará o gráfico.
+
+A classe StartScreen é responsável pela tela inicial do programa. Ela exibe uma imagem de logo e possui dois botões para acessar as telas de eletroforese e espectrofotômetro.
+
+O programa começa na tela de entrada, onde o usuário pode escolher entre eletroforese e espectrofotômetro. A partir da escolha, a respectiva classe é instanciada e a tela correspondente é exibida.
+
+Nosso objetivo técnico é reduzir o tempo e o trabalho que cientistas que usam esses dois aparelhos tem ao usar essas máquinas. Atualmente, eles tem que fazer os cálculos e plotar os gráficos tudo usando o excel.
+
+Então no presente momento, ja concluimos 99% do projeto e a única coisa que falta é adicionar uma forma de converter as distâncias das proteínas, na etapa de eletroforese, de pixel para cm.
