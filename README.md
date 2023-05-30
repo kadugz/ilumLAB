@@ -39,7 +39,7 @@ Nosso objetivo principal, para o caso da espectroscopia, é criar um programa qu
 - (Adicionais) Pesquisar ou criar um código que cria um PDF em Python.
 
 
-##Resumo do projeto 
+## Resumo do projeto 
 
 O código apresentado é um programa em Python que utiliza a biblioteca Tkinter para criar uma interface gráfica com o usuário. O programa possui três classes: EletroScreen, SpectroScreen e StartScreen.
 
