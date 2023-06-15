@@ -10,10 +10,8 @@ from tkinter import PhotoImage
 #Definir variáveis globais
 concentration_values = []
 medias = []
-medias_sub = []
 listaX = []
 kDa = [260,160,110,80,60,50,40,30,20,15,10]
-coordenadas_cm = []
 graph_name = ''
 
 class EletroScreen(tk.Frame): #Classe referente a tela do Eletroforese
@@ -26,15 +24,8 @@ class EletroScreen(tk.Frame): #Classe referente a tela do Eletroforese
             a = np.log10(k)
             kDalog.append(a)
 
-        #Essa parte pode trocar
-        for coord_pixel in listaX: #Multiplica as coordenadas y por uma constante para transformar em cm
-          coord_cm = coord_pixel * 0.02645 
-          coordenadas_cm.append(coord_cm)
-
-        #print(coordenadas_cm)
-        #print(kDalog)
-
-        x = coordenadas_cm
+    
+        x = listaX
         y = kDalog
 
         print(y,x)
@@ -51,7 +42,7 @@ class EletroScreen(tk.Frame): #Classe referente a tela do Eletroforese
         plt.plot(x, y_pred, color='green', label=f"Reta de Regressão: y = {a:.4f}x + {b:.4f}")#Mostra na tela qual a equação da reta
 
         plt.title(self.graph_name, color='red') # Titulo em cima
-        plt.xlabel("Distância(cm)", color='green') # Titulo do eixo X
+        plt.xlabel("Distância(pixel)", color='green') # Titulo do eixo X
         plt.ylabel("Peso Molecular(kDa)", color='green') # Titulo do eixo Y
 
         # Mostra as coordenadas de cada ponto em cima das bolas azuis
