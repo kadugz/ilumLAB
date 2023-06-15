@@ -38,19 +38,29 @@ Nosso objetivo principal, para o caso da espectroscopia, é criar um programa qu
 - (Adicionais) Criar uma ideia de tela para o programa. ✅
 - (Adicionais) Pesquisar ou criar um código que cria um PDF em Python.
 
+## Como utilizar?
 
-## Resumo do projeto 
+Manual de Instruções
+(Se quiser entender melhor abra o PDF dentro da pasta do projeto)
 
-O código apresentado é um programa em Python que utiliza a biblioteca Tkinter para criar uma interface gráfica com o usuário. O programa possui três classes: EletroScreen, SpectroScreen e StartScreen.
+Aqui você pode escolher entre utilizar o Espectrofotômetro ou a Eletroforese, vamos começar pela Eletroforese.
 
-A classe EletroScreen é responsável por criar uma tela de eletroforese. A função generate_graph_eletro plota um gráfico com base nos valores de coordenadas e kDa fornecidos. O usuário pode selecionar uma imagem, escolher pontos de interesse na imagem e o programa irá exibir o gráfico correspondente.
+1 – Eletroforese
 
-A classe SpectroScreen cria uma tela para um espectrofotômetro. A função generate_graph plota um gráfico de absorbância em função da concentração com base nos valores fornecidos pelo usuário. O usuário pode digitar valores de absorbância e concentração em células correspondentes e o programa calculará a média das absorbâncias e plotará o gráfico.
+Ao clicar em Eletroforese, uma tela com o botão de abrir imagem e um para montar o gráfico. Ao clicar no botão de abrir imagem, você deve procurar no seu explorador de arquivos que será aberto pela pasta, exemplos e lá você deve abrir a imagem exemplo_eletroforese.
 
-A classe StartScreen é responsável pela tela inicial do programa. Ela exibe uma imagem de logo e possui dois botões para acessar as telas de eletroforese e espectrofotômetro.
+Após abrir a imagem você verá uma tela que tem sua imagem e onde você deve selecionar com o mouse e o botão esquerdo 11 pontos do seu exemplo.
 
-O programa começa na tela de entrada, onde o usuário pode escolher entre eletroforese e espectrofotômetro. A partir da escolha, a respectiva classe é instanciada e a tela correspondente é exibida.
+Os pontos são o da primeira coluna intitulada de M, onde de cima para baixo(começando em 260 kDa) a escala vai diminuindo e você deve selecionar de cima para baixo os pontos.
 
-Nosso objetivo técnico é reduzir o tempo e o trabalho que cientistas que usam esses dois aparelhos tem ao usar essas máquinas. Atualmente, eles tem que fazer os cálculos e plotar os gráficos tudo usando o excel.
+Após isso clique em Montar gráfico e seja feliz!
 
-Então no presente momento, ja concluimos 99% do projeto e a única coisa que falta é adicionar uma forma de converter as distâncias das proteínas, na etapa de eletroforese, de pixel para cm.
+2 - Espectrofotômetro
+
+Ao clicar em Espectrofotômetro uma tela nada sujestiva irá abrir, ela constara uma tabela com linhas de A até H e colunas de 1 até 12.
+
+Nela você deve inserir em cada coluna sua amostra que deseja utilizar, na pasta "exemplos" há um "exemplo" de como se preencher essa tabela, novamente para maior explicação abra o manual.
+
+Após preencher clique em calcular médias para calcular as medias das suas substâncias com mesma concentração e depois clique em montar gráfico de absorbãncia por concentração.
+
+Com isso você consegue montar seu gráfico + reta de regressão.
