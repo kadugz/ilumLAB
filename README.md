@@ -40,6 +40,10 @@ Nosso objetivo principal, para o caso da espectroscopia, é criar um programa qu
 
 ## Como utilizar?
 
+Inicialmente, o usúario deve baixar a pasta completa dando um copy no repositório.
+Após isso, o usúario deve iniciar o arquivo "ilumlab.py" em um programa que suporte o python, como VScode ou Pycharm.
+Por fim, seguir o manual de instruções abaixo:
+
 Manual de Instruções
 (Se quiser entender melhor abra o PDF dentro da pasta do projeto)
 
